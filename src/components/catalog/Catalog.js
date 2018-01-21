@@ -46,7 +46,7 @@ class Catalog extends Component {
         <ul className="catalog">
           {this.state.pageOfItems.map(item =>
             <li key={item.id} className="catalog__item">
-              <Link to={`${item.albumId}/${item.id}`} className="catalog__itemPreview">
+              <Link to={`${item.albumId}/${item.id-1}`} className="catalog__itemPreview">
                 <img src={item.thumbnailUrl} alt="" />
               </Link>
               <p className="catalog__itemTitle">{item.title}</p>
