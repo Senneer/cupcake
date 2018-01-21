@@ -1,0 +1,27 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0 0 15px;
+  list-style: none; }
+  .pagination__item:not(:last-of-type) {
+    margin-right: 10px; }
+  .pagination__item button {
+    display: block;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-family: inherit;
+    background: #fff;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    outline: none; }
+    .pagination__item button:hover {
+      background: #ddd; }
+  .pagination__item._active button {
+    color: #fff;
+    background: #333; }
+  .pagination__item._disabled button {
+    opacity: .5;
+    cursor: auto; }
+    .pagination__item._disabled button:hover {
+      background: #fff; }

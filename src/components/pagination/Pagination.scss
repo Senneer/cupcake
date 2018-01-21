@@ -1,0 +1,40 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0 0 15px;
+  list-style: none;
+  &__item {
+    &:not(:last-of-type) {
+      margin-right: 10px;
+    }
+    & button {
+      display: block;
+      padding: 5px 10px;
+      font-size: 14px;
+      font-family: inherit;
+      background: #fff;
+      border: 1px solid #ddd;
+      cursor: pointer;
+      outline: none;
+      &:hover {
+        background: #ddd;
+      }
+    }
+    &._active {
+      & button {
+        color: #fff;
+        background: #333;
+      }
+    }
+    &._disabled {
+      & button {
+        opacity: .5;
+        cursor: auto;
+        &:hover {
+          background: #fff;
+        }
+      }
+    }
+  }
+}
